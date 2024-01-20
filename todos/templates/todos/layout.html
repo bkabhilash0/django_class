@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Title</title>
+</head>
+<body>
+{% include "todos/navbar.html" %}
+<main>
+    {% block mainContent %}
+    {% endblock mainContent %}
+
+</main>
+</body>
+</html>

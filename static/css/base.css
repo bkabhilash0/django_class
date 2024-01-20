@@ -1,0 +1,22 @@
+body{
+    background: lightslategray;
+}
+
+.navbar{
+    background: indigo;
+    padding: 10px 5px;
+    color: white;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.navbar ul a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}

@@ -1,0 +1,15 @@
+{% extends "todos/layout.html" %}
+
+{% block mainContent %}
+
+<h1>From the Template</h1>
+    {% if not todos %}
+        <h1>No Todos Found</h1>
+    {% endif %}
+    {% for x in todos %}
+        <div>
+            <p>{{ x.todo }}</p>
+            <a href="{% url 'todos:todo.delete' x.id %}">Delete</a>
+        </div>
+    {% endfor %}
+{% endblock mainContent%}

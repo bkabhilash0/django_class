@@ -1,0 +1,11 @@
+{% extends "todos/layout.html" %}
+
+{% block mainContent %}
+    <h1>Add new todo</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="todo">New Todo</label>
+        <input type="text" id="todo" name="todo">
+        <button type="submit">Submit</button>
+    </form>
+{% endblock mainContent %}
